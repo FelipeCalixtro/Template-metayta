@@ -1,0 +1,213 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?0e45013834d6968bc459987d6a7354f0") format("truetype"),
+url("./flaticon.woff?0e45013834d6968bc459987d6a7354f0") format("woff"),
+url("./flaticon.woff2?0e45013834d6968bc459987d6a7354f0") format("woff2"),
+url("./flaticon.eot?0e45013834d6968bc459987d6a7354f0#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0e45013834d6968bc459987d6a7354f0#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "atras": "\f101",
+    "avatar": "\f102",
+    "bocadillo-de-dialogo-ovalado-de-comentario-de-chat-con-lineas-de-texto": "\f103",
+    "boton-de-campana-de-notificaciones": "\f104",
+    "boton-de-menu-de-tres-lineas-horizontales": "\f105",
+    "calendario-1": "\f106",
+    "calendario": "\f107",
+    "campana": "\f108",
+    "cancelar": "\f109",
+    "clock-circular-outline": "\f10a",
+    "clock": "\f10b",
+    "comentario": "\f10c",
+    "comprobado": "\f10d",
+    "correo-electronico": "\f10e",
+    "descargar": "\f10f",
+    "envelope": "\f110",
+    "facebook": "\f111",
+    "heart": "\f112",
+    "help": "\f113",
+    "information": "\f114",
+    "instagram": "\f115",
+    "like-1": "\f116",
+    "like": "\f117",
+    "linkedin": "\f118",
+    "lista": "\f119",
+    "llamada-de-telefono-inteligente": "\f11a",
+    "llamada-telefonica": "\f11b",
+    "lupa-1": "\f11c",
+    "lupa": "\f11d",
+    "menu-1": "\f11e",
+    "menu-2": "\f11f",
+    "menu-de-puntos": "\f120",
+    "menu": "\f121",
+    "notificacion": "\f122",
+    "proximo": "\f123",
+    "send": "\f124",
+    "settings": "\f125",
+    "share-1": "\f126",
+    "share": "\f127",
+    "smartphone": "\f128",
+    "star": "\f129",
+    "telefono-inteligente": "\f12a",
+    "telefono": "\f12b",
+    "telephone": "\f12c",
+    "whatsapp": "\f12d",
+    "youtube-1": "\f12e",
+    "youtube": "\f12f",
+);
+
+.flaticon-atras:before {
+    content: map-get($flaticon-map, "atras");
+}
+.flaticon-avatar:before {
+    content: map-get($flaticon-map, "avatar");
+}
+.flaticon-bocadillo-de-dialogo-ovalado-de-comentario-de-chat-con-lineas-de-texto:before {
+    content: map-get($flaticon-map, "bocadillo-de-dialogo-ovalado-de-comentario-de-chat-con-lineas-de-texto");
+}
+.flaticon-boton-de-campana-de-notificaciones:before {
+    content: map-get($flaticon-map, "boton-de-campana-de-notificaciones");
+}
+.flaticon-boton-de-menu-de-tres-lineas-horizontales:before {
+    content: map-get($flaticon-map, "boton-de-menu-de-tres-lineas-horizontales");
+}
+.flaticon-calendario-1:before {
+    content: map-get($flaticon-map, "calendario-1");
+}
+.flaticon-calendario:before {
+    content: map-get($flaticon-map, "calendario");
+}
+.flaticon-campana:before {
+    content: map-get($flaticon-map, "campana");
+}
+.flaticon-cancelar:before {
+    content: map-get($flaticon-map, "cancelar");
+}
+.flaticon-clock-circular-outline:before {
+    content: map-get($flaticon-map, "clock-circular-outline");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-comentario:before {
+    content: map-get($flaticon-map, "comentario");
+}
+.flaticon-comprobado:before {
+    content: map-get($flaticon-map, "comprobado");
+}
+.flaticon-correo-electronico:before {
+    content: map-get($flaticon-map, "correo-electronico");
+}
+.flaticon-descargar:before {
+    content: map-get($flaticon-map, "descargar");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-help:before {
+    content: map-get($flaticon-map, "help");
+}
+.flaticon-information:before {
+    content: map-get($flaticon-map, "information");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-like-1:before {
+    content: map-get($flaticon-map, "like-1");
+}
+.flaticon-like:before {
+    content: map-get($flaticon-map, "like");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-lista:before {
+    content: map-get($flaticon-map, "lista");
+}
+.flaticon-llamada-de-telefono-inteligente:before {
+    content: map-get($flaticon-map, "llamada-de-telefono-inteligente");
+}
+.flaticon-llamada-telefonica:before {
+    content: map-get($flaticon-map, "llamada-telefonica");
+}
+.flaticon-lupa-1:before {
+    content: map-get($flaticon-map, "lupa-1");
+}
+.flaticon-lupa:before {
+    content: map-get($flaticon-map, "lupa");
+}
+.flaticon-menu-1:before {
+    content: map-get($flaticon-map, "menu-1");
+}
+.flaticon-menu-2:before {
+    content: map-get($flaticon-map, "menu-2");
+}
+.flaticon-menu-de-puntos:before {
+    content: map-get($flaticon-map, "menu-de-puntos");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-notificacion:before {
+    content: map-get($flaticon-map, "notificacion");
+}
+.flaticon-proximo:before {
+    content: map-get($flaticon-map, "proximo");
+}
+.flaticon-send:before {
+    content: map-get($flaticon-map, "send");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-share-1:before {
+    content: map-get($flaticon-map, "share-1");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-telefono-inteligente:before {
+    content: map-get($flaticon-map, "telefono-inteligente");
+}
+.flaticon-telefono:before {
+    content: map-get($flaticon-map, "telefono");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-whatsapp:before {
+    content: map-get($flaticon-map, "whatsapp");
+}
+.flaticon-youtube-1:before {
+    content: map-get($flaticon-map, "youtube-1");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}

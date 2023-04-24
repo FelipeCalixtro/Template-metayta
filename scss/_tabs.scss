@@ -1,0 +1,55 @@
+.worko-tabs {
+ 
+   .state{
+     position: absolute;
+     left: -10000px;
+   }
+   .items-tabs{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+   }
+ 
+   .panel-tabs{            
+       .panel {
+         background-color: #fff;
+         padding: 15px 0px;
+         min-height: 300px;
+         display: none;
+         width: 100%;
+         flex-basis: auto;
+     }
+   }
+
+   .tab {
+      display: grid;
+      grid-gap: 6px;
+      justify-items: center;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      padding: 12px 8px;
+      cursor: pointer;
+     
+       &:hover{
+         background-color: #fff;
+       }
+   }  
+}
+label#tab-four-label {
+   font-size: 0.7rem;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label{
+   background-color: $color_5;
+   color: white;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel{
+   display: block;
+}

@@ -1,0 +1,286 @@
+@import 'normalize';
+@import 'variables';
+
+
+/*===========================================================================================================
+=============================================================================================================*/
+body{
+    background: #F9F9FF;
+}
+header a {
+    color: white;
+}
+.line-v {
+    width: 2px;
+    height: 38px;
+    border-radius: 2px;
+    background: $color_1;
+    margin: 0 2px;
+}
+ul.list-inline{
+    margin-bottom: 10px;
+}
+.link-redes {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 8px;
+    align-items: center;
+    padding: 12px 0;
+    i {
+        font-size: 1.1rem;
+    }
+}
+.w-100{
+    width: 100%;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+}
+.menu-flotante {
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    width: 100%;
+    background: #F0F1FF;
+    border-top-left-radius: $radius_2;
+    border-top-right-radius: $radius_2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: $sombra-top;
+}
+.btn-menu {
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+    grid-gap: 3px;
+    img {
+        height: 27px;
+    }
+    span {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+/*=========================================
+=================Formulario==================*/
+.form{
+    max-width: 400px;
+    margin: auto;
+}
+.input{
+    position: relative;
+    label {
+        color: $color_2;
+        position: absolute;
+        z-index: 2;
+        padding: 12px 15px;
+        font-weight: 600;
+        top: 0;
+    }
+    input {
+        min-height: 64px;
+        border: 1px solid #6B7484;
+        border-radius: $radius_1;
+        position: relative;
+        padding: 12px 15px;
+        padding-top: 30px;
+        z-index: 1;
+    }
+}
+ 
+/*=========================================
+=================INDEX==================*/
+h1.slogan {
+    font-size: 1.2rem;
+    margin: 12px 0px;
+}
+.grid-out {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+section.section-marca {
+    padding: 60px 40px;
+    text-align: center;
+    /* background-size: cover; */
+    background-position-x: center;
+    background-position-y: top;
+}
+.section-capa {
+    position: relative;
+    display: grid;
+    border-top-left-radius: $radius_3;
+    border-top-right-radius: $radius_3;
+    background: white;
+    padding: 30px;
+    margin-top: -30px;
+    height: 100%;
+    box-shadow: 0px -4px 15px -8px #0000006b;
+}
+.atras {
+    position: absolute;
+    left: 30px;
+    top: -60px;
+}
+/*=========================================
+=================PRINCIPAL==================*/
+header{
+    position: absolute;
+    width: 100%;
+}
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-top: 22px;
+    height: 188px;
+    width: 100%;
+    
+}
+section.header-principal {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    min-height: 160px;
+    top: 0;
+    z-index: -1;
+    margin-bottom: -18vh;
+}
+.user-content img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: $sombra1;
+}
+.circle-number {
+    width: 27px;
+    height: 27px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    color: white;
+}
+.bg-tarea{background: $color_3;}
+.bg-meta{background: $color_4;}
+.bg-deseo{background: $color_5;}
+
+.gap-20 {
+    display: grid;
+    grid-gap: 12px;
+}
+/*=========================================
+=================PAGE==================*/
+.header-page{
+    position: relative;
+    width: 100%;
+    min-height: 160px;
+    height: 20vh;
+    top: 0;
+    z-index: -1;
+    margin-bottom: -30px;
+}
+.page-content{
+    position: relative;
+    border-top-right-radius: $radius_3;
+    border-top-left-radius: $radius_3;
+    box-shadow: $sombra-top;
+    padding: 20px 0;
+    background: white;
+    min-height: calc(70vh + 30px);
+}
+.agregar-flotante {
+    position: fixed;
+    right: 22px;
+    bottom: 80px
+}
+/*=========================================
+=================SCREEN==================*/
+@media only screen and (min-width: 700px) {
+    .grid-out{
+        grid-template-rows: 2fr 1fr;
+    }
+    section.section-marca {
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .grid-out {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .section-capa {
+        margin-top: 0;
+        margin-left: -30px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: $radius_3;
+        box-shadow: -4px 0px 15px -8px #0000006b;
+    }
+    .atras {
+        position: absolute;
+        left: -60px;
+        top: 30px;
+    }
+    .btn-menu {
+        height: 100px;
+        width: 100px;
+        align-content: center;
+    }
+    .menu-flotante {
+        height: 100%;
+        width: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        align-content: center;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $radius_3;
+    }
+    .header-page {
+        min-height: 250px;
+        background-position-y: top;
+        height: 30vh;
+    }
+    .agregar-flotante {
+        position: absolute;
+        bottom: 22px;
+    }
+    .content-tarea {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+    .card-meta{
+        grid-template-columns: 1fr auto;
+    }
+}
+@media only screen and (min-width: 650px) {
+
+}
+
+@media only screen and (min-width: 850px) {
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+}
+
+@media only screen and (max-width: 1390px) {
+
+}
+
+@media only screen and (max-width: 1681px) {
+
+}
+
+
+
+@import 'grid';
+@import 'acordion';
+@import 'card';
+@import 'button';
+@import 'formulario';
+@import 'header';
+@import 'footer';
+@import 'modal';
+@import 'tabs';
+@import 'class';

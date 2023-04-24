@@ -1,0 +1,74 @@
+.card {
+    padding: 15px;
+    background: white;
+    border-radius: $radius_1;
+    box-shadow: $sombra1;
+    h1,h2,h3,h4{
+        margin: 0;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+}
+.grid-head-card {
+    display: grid;
+    grid-template-columns: 30px 1fr auto;
+    grid-gap: 15px;
+    align-items: center;
+}
+.card-deseo {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    border: $border;
+    border-radius: $radius_1;
+    overflow: hidden;
+}
+.content-deseo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    padding: 12px;
+}
+.card-tarea {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: $border;
+}
+.card-meta{
+    position: relative;
+    overflow: hidden;
+    border: $border;
+    display: grid;
+    border-radius: $radius;
+    padding: 12px;
+    &:before{
+        content: "";
+        height: 100%;
+        width: 3px;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: $color_4;
+    }
+}
+.card-border{
+    overflow: hidden;
+    border: $border;
+    border-radius: $radius;
+}
+.card-compra{
+    .img-compra{
+        
+    }
+    .content{
+        display: grid;
+        padding: 12px;
+        grid-gap: 6px;
+    }
+}

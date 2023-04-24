@@ -1,0 +1,19 @@
+{
+  "name": "playgroup-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -watch --include-path scss scss/main.scss  public/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "normalize.css": "^8.0.1"
+  }
+}

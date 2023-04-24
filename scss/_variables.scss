@@ -1,0 +1,123 @@
+//COLORES
+$color_1:#4D53E0;
+$color_2:#1B1B4B;
+$color_3:#FF8E36;
+$color_4:#FF5668;
+$color_5:#41D5E2;
+
+$color_fondo:#adc395;
+
+$color_t: #333333;
+$color_f:#F8F8F8;
+
+//TIPOGRAFIA
+$font-family: 'Ubuntu', sans-serif;
+
+$letra-t1: 0.9rem;
+$letra-t2: 1.3rem;
+
+$border: 1px solid #e5e5e5;
+//FORMAS
+$radius: 5px;
+$radius_1: 15px;
+$radius_2: 20px;
+$radius_3: 30px;
+
+//SOMBRAS
+$sombra1: 0px 4px 10px #00000040;
+$sombra-top: 0px -2px 12px #0000003b;
+
+/*CONTENEDOR*/
+$max-container: 1285px;
+$container:90%;
+
+/*Dispositivos*/
+/*Media screen*/
+$t_cell: 250px;
+$t_tablet: 800px;
+$t_laptop: 1200px;
+$t_escritorio: 1440px;
+
+/*===========================================================================================================
+=============================================================================================================*/
+*,div{
+    font-family: $font_family;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+body{
+    transition: 0.4s;
+    overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+}
+ol {
+    padding-left: 23px;
+    li {
+        list-style: decimal;
+        padding-left: 7px;
+    }
+}
+p,li {
+    line-height: 18px;
+    color: $color_t;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: .95rem;
+}
+b {
+    color: $color_3;
+}
+strong {
+    font-weight: 800;
+    color: $color_1;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: $color_2;
+    line-height: normal;
+    strong {
+        color: $color_1;
+    }
+}
+
+
+h1 {font-size: 1.6rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.2rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: 0.9rem;}
+h6 {font-size: 0.85rem;}//14px
+
+@media only screen and (min-width: 1681px) {
+    h1 {font-size: 2.6rem;}//46px
+    h2 {font-size: 2.2rem;}//46px
+    h3 {font-size: 1.6rem;}//34px
+    h4 {font-size: 1.4rem;}//24px
+    h5 {font-size: 0.9rem;}//16px
+    h6 {font-size: 0.8rem;}//14px 
+}
+@media only screen and (min-width: 800px) {
+    h1 {font-size: 2.2rem;}//46px
+    h2 {font-size: 2rem;}//46px
+    h3 {font-size: 1.3rem;}//34px
+    h4 {font-size: 1.1rem;}//24px
+    h5 {font-size: 0.9rem;}//16px
+    h6 {font-size: 0.875rem;}//14px
+}
+a{
+    transition: 0.3s;
+    font-size: 0.95rem;
+    color: $color_2;
+}
+hr {
+    background: #f1f0f0;
+    border: 0;
+    margin: 25px 0;
+    height: 2px;
+}
